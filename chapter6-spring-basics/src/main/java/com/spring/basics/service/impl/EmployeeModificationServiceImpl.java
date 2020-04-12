@@ -1,6 +1,7 @@
 package com.spring.basics.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +14,13 @@ import com.spring.basics.service.EmployeeModificationService;
 public class EmployeeModificationServiceImpl implements EmployeeModificationService {
 
 	@Autowired
+	@Qualifier("employeeModificationDAOImpl")
 	private EmployeeModificationDAO employeeModificationDAO;
+	
+	
+	@Autowired
+	@Qualifier("employeeModificationDraftDAOImpl")
+	private EmployeeModificationDAO employeeModificationDraftDAO;
 	
 	
 	@MethodRunningTime(active = true)

@@ -19,10 +19,17 @@ public class ConsoleApplication implements CommandLineRunner {
 	private EmployeeSelectService employeeSelectService2;
 	
 	@Autowired
+	private EmployeeSelectService employeeSelectService3;
+	
+	
+	@Autowired
 	private EmployeeModificationService employeeModificationService;
 	
 	@Autowired
 	private EmployeeModificationService employeeModificationService2;
+	
+	@Autowired
+	private EmployeeModificationService employeeModificationService3;
 	
 	
 	@Override
@@ -41,10 +48,14 @@ public class ConsoleApplication implements CommandLineRunner {
 		
 		System.out.println("employeeModificationService2 address : " + employeeModificationService2);
 
+		System.out.println("employeeModificationService3 address : " + employeeModificationService3);
+
 
 		System.out.println("employeeSelectService address : " + employeeSelectService);
 		
 		System.out.println("employeeSelectService2 address : " + employeeSelectService2);
+		
+		System.out.println("employeeSelectService3 address : " + employeeSelectService3);
 	}
 
 }

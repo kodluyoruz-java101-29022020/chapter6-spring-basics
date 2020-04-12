@@ -13,10 +13,10 @@ import com.spring.basics.annotion.MethodRunningTime;
 public class MethodRunningTimeAspect {
 
 	
-	@Around("@annotation(methodRunningTime)")
-	public Object execute(ProceedingJoinPoint point, MethodRunningTime methodRunningTime) throws Throwable {
+	@Around("@annotation(methodRunningTime1)")
+	public Object execute(ProceedingJoinPoint point, MethodRunningTime methodRunningTime1) throws Throwable {
 		
-		if(!methodRunningTime.active()) {
+		if(!methodRunningTime1.active()) {
 			return point.proceed();
 		}
 		

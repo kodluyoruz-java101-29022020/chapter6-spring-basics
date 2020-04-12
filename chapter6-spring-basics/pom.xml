@@ -33,7 +33,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>demo-project</finalName>
+		<finalName>chapter6-spring-basics</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

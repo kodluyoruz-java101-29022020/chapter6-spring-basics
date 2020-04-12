@@ -4,24 +4,22 @@ import org.springframework.stereotype.Component;
 
 import com.spring.basics.dao.EmployeeModificationDAO;
 
-@Component("employeeModificationDAOImpl")
-public class EmployeeModificationDAOImpl implements EmployeeModificationDAO {
+@Component("employeeModificationDraftDAOImpl")
+public class EmployeeModificationDraftDAOImpl implements EmployeeModificationDAO{
 
 	@Override
 	public boolean save(String record) {
-		System.out.println(record + " saved!");
-		return true;
+		return false;
 	}
 
 	@Override
 	public boolean update(String record, Long id) {
-		System.out.println(record + " updated!");
-		return true;
+		return false;
 	}
 
 	@Override
 	public boolean delete(Long id) {
-		System.out.println(id + " record deleted!");
 		return false;
 	}
+
 }
