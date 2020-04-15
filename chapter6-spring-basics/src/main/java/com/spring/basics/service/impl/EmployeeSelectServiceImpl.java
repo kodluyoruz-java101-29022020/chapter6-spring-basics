@@ -4,13 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.spring.basics.annotion.MethodRunningTime;
 import com.spring.basics.dao.EmployeeSelectDAO;
 import com.spring.basics.service.EmployeeSelectService;
 
-@Component
+@Service
 @Scope(value = "singleton")
 public class EmployeeSelectServiceImpl implements EmployeeSelectService {
 

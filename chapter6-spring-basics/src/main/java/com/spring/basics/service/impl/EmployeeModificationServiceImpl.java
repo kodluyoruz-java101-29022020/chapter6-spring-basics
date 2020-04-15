@@ -3,13 +3,13 @@ package com.spring.basics.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.spring.basics.annotion.MethodRunningTime;
 import com.spring.basics.dao.EmployeeModificationDAO;
 import com.spring.basics.service.EmployeeModificationService;
 
-@Component
+@Service
 @Scope(value = "prototype")
 public class EmployeeModificationServiceImpl implements EmployeeModificationService {
 

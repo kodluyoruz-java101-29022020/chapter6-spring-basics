@@ -3,11 +3,11 @@ package com.spring.basics.dao.impl;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.spring.basics.dao.EmployeeSelectDAO;
 
-@Component
+@Repository
 public class EmployeeSelectDAOImpl implements EmployeeSelectDAO {
 
 	@Override

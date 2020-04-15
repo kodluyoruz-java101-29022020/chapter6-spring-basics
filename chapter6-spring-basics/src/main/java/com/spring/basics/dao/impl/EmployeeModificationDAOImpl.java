@@ -1,10 +1,10 @@
 package com.spring.basics.dao.impl;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.spring.basics.dao.EmployeeModificationDAO;
 
-@Component("employeeModificationDAOImpl")
+@Repository("employeeModificationDAOImpl")
 public class EmployeeModificationDAOImpl implements EmployeeModificationDAO {
 
 	@Override
