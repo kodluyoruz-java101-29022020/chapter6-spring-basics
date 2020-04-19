@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import com.spring.basics.dao.EmployeeSelectDAO;
 
-@Repository
+@Repository("employeeSelectDAOImpl")
 public class EmployeeSelectDAOImpl implements EmployeeSelectDAO {
 
 	@Override
